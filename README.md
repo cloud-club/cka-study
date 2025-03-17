@@ -45,7 +45,7 @@
 
 | Week   | Learning Content Title | Details of Learning Content                                      | Completion |
 | ------ | ---------------------- | ---------------------------------------------------------------- | ---------- |
-| Week 1 | OT                     | * 스터디 진행방향 결정 & 환경 세팅<br> * 강의 결제하기<br> * Core Concept 수강 + 실습 |            |
+| Week 1 | OT                     | * 스터디 진행방향 결정 & 환경 세팅<br> * 강의 결제하기<br> * Core Concept 수강 + 실습 |    ✅     |
 | Week 2 | 강의 + 요약 + 실습       | * Scheduling<br> * Logging & Monitoring                        |            |
 | Week 3 | 강의 + 요약 + 실습       | * Application LifeCycle Management<br> * Cluster Maintenance   |            |
 | Week 4 | 강의 + 요약 + 실습       | * Security<br> * Storage                                       |            |
@@ -70,4 +70,4 @@
 2. 해당 주차 폴더에 본인의 이름으로 폴더 생성 후, 정리
 3. 변경사항을 커밋: `git commit -m 'Week1: 강의 정리'`
 4. 원격 브랜치에 Push `git push origin week1/hyesu`
-5. Pull Request 생성
+5. main에 Pull Request 생성
