@@ -12,9 +12,6 @@
 : Kube-proxy
 : Container Runtime Engine
 
-### Docker-vs-ContainerD
-![alt text](image.png)
-
 ### ETCD
 : distributed reliable key-value store that is Simple, Secure, & Fast
 
@@ -26,7 +23,7 @@ kubectl 명령실행 - kube-api server 요청인증 및 확인 - ETCD 클러스�
 - Retrieve data
 - Update ETCD
 - Scheduler
-- Kubelet
+- Kubelets
 
 ### Kube Controller-Manager
 #### Controller
