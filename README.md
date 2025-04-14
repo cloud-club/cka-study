@@ -49,8 +49,8 @@
 | Week 2 | 강의 + 요약 + 실습       | * Scheduling<br> * Logging & Monitoring                        |      ✅      |
 | Week 3 | 강의 + 요약 + 실습       | * Application LifeCycle Management<br> * Cluster Maintenance   |       ✅     |
 | Week 4 | 강의 + 요약 + 실습       | * Security<br> * Storage                                       |      ✅      |
-| Week 5 | 강의 + 요약 + 실습       | * Networking<br> * Design & Install a Kubernetes Cluster<br> * Install “Kubernetes the kubeadm way”<br> * Helm Basics |            |
-| Week 6 | 강의 + 요약 + 실습       | * Kustomize Basics<br> * E2E Test<br> ~                         |            |
+| Week 5 | 강의 + 요약 + 실습       | * Networking<br> * Design & Install a Kubernetes Cluster<br> * Install “Kubernetes the kubeadm way”<br> * Helm Basics |     ✅       |
+| Week 6 | 강의 + 요약 + 실습       | * Kustomize Basics<br> * E2E Test<br> ~                         |     ✅       |
 | Week 7 | 모의고사 풀이            |                                                                |            |
 | Week 8 | 모의고사 풀이            |                                                                |            |
 
