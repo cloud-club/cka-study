@@ -1,0 +1,43 @@
+apiVersion: execution.furiko.io/v1alpha1
+kind: JobConfig
+metadata:
+  name: cloud-club-job
+  namespace: furiko-system
+spec:
+  schedule:
+    cron:
+      expression: "42 15 * * *"
+    disabled: False
+  concurrency:
+    policy: Forbid
+  template:
+    spec:
+      parallelism:
+        withCount: 1 # Job 병렬 처리 정도 (env의 value값도 함께 수정)
+        completionStrategy: AllSuccessful #AnySuccessful
+      taskTemplate:
+        pod:
+          spec:
+            matchLabels:
+              app: pipeline
+            tolerations:  # 거부를 허용으로 만들겠다.
+              - key: atype
+                operator: Equal
+                value: mem01
+                effect: NoSchedule
+            affinity:  # 선호
+              nodeAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                  nodeSelectorTerms:
+                    - matchExpressions:
+                        - key: ncloud.com/nks-nodepool
+                          operator: In
+                          values:
+                            - ai-prd-mem-01
+                    - matchExpressions:
+                        - key: kubernetes.io/hostname
+                          operator: NotIn
+                          values:
+                            - ai-prd-mem-01-w-cloud-club
+            imagePullSecrets:
+              - name: cloud-club-prd
