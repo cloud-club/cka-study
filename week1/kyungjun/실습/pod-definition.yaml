@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Pod
+metadata:  # dict
+  name: myapp-pod
+  namespace: dev
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  containers:  # list/array
+    - name: nginx-container
+      image: nginx
+    - name: busybox-container
+      image: busybox
+      command: ["sleep", "3600"]
+
+#pod_config = {
+#"apiVersion": "v1",
+#"kind": "Pod",
+#"metadata": {
+#  "name": "myapp-pod",
+#  "labels": {
+#    "app": "myapp",
+#    "type": "front-end"
+#  }
+#},
+#"spec": {
+#  "containers": [
+#    {  # 첫 번째 요소 (딕셔너리)
+#      "name": "nginx-container",
+#      "image": "nginx"
+#    },
+#    {  # 두 번째 요소 (딕셔너리)
+#      "name": "busybox-container",
+#      "image": "busybox",
+#      "command": ["sleep", "3600"]
+#    }
+#  ]
+#}
+#}

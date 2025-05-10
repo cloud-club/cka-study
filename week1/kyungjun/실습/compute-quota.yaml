@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-quota
+  namespace: dev
+spec:
+  hard:
+    pods: "10"
+    requests.cpu: "4"
+    requests.memory: 5Gi
+    limits.cpu: "10"
+    limits.memory: 10Gi
+
+
+
+
+  20
+  21 filter {
+  22     # 첫 번째 단계: message 필드를 JSON으로 파싱
+  23     json {
+  24         source => "message"
+  25         target => "parsed_message"
+  26         skip_on_invalid_json => true
+  27     }
+  28
+  46
+  47     # 필요에 따라 원본 message 필드를 삭제
+  48     mutate {
+  49         remove_field => ["message"]
+  50     }
+  51 }
