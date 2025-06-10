@@ -3,6 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.11 (ringle_assignment)" />
   </component>
-  <component name="KubernetesApiPersistence">{}</component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (ringle_assignment)" project-jdk-type="Python SDK" />
 </project>
